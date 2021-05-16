@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  has_many :boulders
+
   has_secure_password
 
   validates :password, length: {minimum: 6}
